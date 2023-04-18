@@ -40,7 +40,7 @@ export class App extends Component {
     return (
       <>
         <Section title='Please leave feedback'>
-          <FeedbackOptions onLeaveFeedback={this.handleIncrement} />
+          <FeedbackOptions options={Object.keys(this.state)} onLeaveFeedback={this.handleIncrement} />
         </Section>
 
         <Section title='Statistics'>
